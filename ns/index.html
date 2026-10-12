@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BaseTwin vocabulary</title>
+<style>body{font-family:system-ui,sans-serif;max-width:60rem;margin:2rem auto;padding:0 1rem;line-height:1.5}
+table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #ddd;padding:.4rem;text-align:left;vertical-align:top}
+code{font-size:.9em}</style></head><body>
+<h1>BaseTwin vocabulary</h1>
+<p>Namespace <code>https://w3id.org/basetwin/ns#</code> (prefix <code>bt:</code>). JSON-LD context:
+<a href="https://w3id.org/basetwin/context/v1.jsonld">https://w3id.org/basetwin/context/v1.jsonld</a>.
+Within v1 terms are only added, never renamed or removed.</p>
+<table><thead><tr><th>Term</th><th>IRI</th><th>Meaning</th></tr></thead><tbody>
+<tr id="kind"><td><code>bt:kind</code></td><td><code>https://w3id.org/basetwin/ns#kind</code></td><td>Nature of a value: observation, estimate, forecast or simulation. Always present.</td></tr>
+<tr id="quality"><td><code>bt:quality</code></td><td><code>https://w3id.org/basetwin/ns#quality</code></td><td>raw, provisional, validated or suspect.</td></tr>
+<tr id="method"><td><code>bt:method</code></td><td><code>https://w3id.org/basetwin/ns#method</code></td><td>How the value was produced, e.g. model:&lt;name&gt;@&lt;version&gt;.</td></tr>
+<tr id="issuedAt"><td><code>bt:issuedAt</code></td><td><code>https://w3id.org/basetwin/ns#issuedAt</code></td><td>When the value was issued (model outputs, forecasts); used for as-of reads.</td></tr>
+<tr id="receivedAt"><td><code>bt:receivedAt</code></td><td><code>https://w3id.org/basetwin/ns#receivedAt</code></td><td>When the value was received by the twin.</td></tr>
+<tr id="validFrom"><td><code>bt:validFrom</code></td><td><code>https://w3id.org/basetwin/ns#validFrom</code></td><td>Start of the validity interval.</td></tr>
+<tr id="validTo"><td><code>bt:validTo</code></td><td><code>https://w3id.org/basetwin/ns#validTo</code></td><td>End of the validity interval.</td></tr>
+<tr id="uncertainty"><td><code>bt:uncertainty</code></td><td><code>https://w3id.org/basetwin/ns#uncertainty</code></td><td>Uncertainty of the value, e.g. {p10, p90, sigma}.</td></tr>
+<tr id="spatialRes"><td><code>bt:spatialRes</code></td><td><code>https://w3id.org/basetwin/ns#spatialRes</code></td><td>True spatial resolution of the value, e.g. jis4 (JIS X 0410 mesh level) or point.</td></tr>
+<tr id="temporalRes"><td><code>bt:temporalRes</code></td><td><code>https://w3id.org/basetwin/ns#temporalRes</code></td><td>True temporal resolution, ISO 8601 duration.</td></tr>
+<tr id="provenance"><td><code>bt:provenance</code></td><td><code>https://w3id.org/basetwin/ns#provenance</code></td><td>Relationship to the IngestRun or ModelRun that produced the value.</td></tr>
+<tr id="missing"><td><code>bt:missing</code></td><td><code>https://w3id.org/basetwin/ns#missing</code></td><td>true when the value is missing; the value is then a sentinel, never 0.</td></tr>
+<tr id="missingReason"><td><code>bt:missingReason</code></td><td><code>https://w3id.org/basetwin/ns#missingReason</code></td><td>Why the value is missing.</td></tr>
+<tr id="unitText"><td><code>bt:unitText</code></td><td><code>https://w3id.org/basetwin/ns#unitText</code></td><td>Unit as given by the source when it has no UN/CEFACT code.</td></tr>
+<tr id="attributionText"><td><code>bt:attributionText</code></td><td><code>https://w3id.org/basetwin/ns#attributionText</code></td><td>Attribution wording required by the source dataset&#x27;s policy.</td></tr>
+<tr id="usageNote"><td><code>bt:usageNote</code></td><td><code>https://w3id.org/basetwin/ns#usageNote</code></td><td>Usage note required by the source dataset&#x27;s policy (empty when none).</td></tr>
+<tr id="Area"><td><code>bt:Area</code></td><td><code>https://w3id.org/basetwin/ns#Area</code></td><td>Term &#x27;Area&#x27; in the context.</td></tr>
+<tr id="Dataset"><td><code>bt:Dataset</code></td><td><code>https://w3id.org/basetwin/ns#Dataset</code></td><td>Term &#x27;Dataset&#x27; in the context.</td></tr>
+<tr id="DatasetVersion"><td><code>bt:DatasetVersion</code></td><td><code>https://w3id.org/basetwin/ns#DatasetVersion</code></td><td>Term &#x27;DatasetVersion&#x27; in the context.</td></tr>
+<tr id="GridCell"><td><code>bt:GridCell</code></td><td><code>https://w3id.org/basetwin/ns#GridCell</code></td><td>Term &#x27;GridCell&#x27; in the context.</td></tr>
+<tr id="IngestRun"><td><code>bt:IngestRun</code></td><td><code>https://w3id.org/basetwin/ns#IngestRun</code></td><td>Term &#x27;IngestRun&#x27; in the context.</td></tr>
+<tr id="License"><td><code>bt:License</code></td><td><code>https://w3id.org/basetwin/ns#License</code></td><td>Term &#x27;License&#x27; in the context.</td></tr>
+<tr id="ModelRun"><td><code>bt:ModelRun</code></td><td><code>https://w3id.org/basetwin/ns#ModelRun</code></td><td>Term &#x27;ModelRun&#x27; in the context.</td></tr>
+<tr id="Scenario"><td><code>bt:Scenario</code></td><td><code>https://w3id.org/basetwin/ns#Scenario</code></td><td>Term &#x27;Scenario&#x27; in the context.</td></tr>
+<tr id="Workspace"><td><code>bt:Workspace</code></td><td><code>https://w3id.org/basetwin/ns#Workspace</code></td><td>Term &#x27;Workspace&#x27; in the context.</td></tr>
+<tr id="connector"><td><code>bt:connector</code></td><td><code>https://w3id.org/basetwin/ns#connector</code></td><td>Term &#x27;connector&#x27; in the context.</td></tr>
+<tr id="entitiesWritten"><td><code>bt:entitiesWritten</code></td><td><code>https://w3id.org/basetwin/ns#entitiesWritten</code></td><td>Term &#x27;entitiesWritten&#x27; in the context.</td></tr>
+<tr id="finishedAt"><td><code>bt:finishedAt</code></td><td><code>https://w3id.org/basetwin/ns#finishedAt</code></td><td>Term &#x27;finishedAt&#x27; in the context.</td></tr>
+<tr id="gridLevel"><td><code>bt:gridLevel</code></td><td><code>https://w3id.org/basetwin/ns#gridLevel</code></td><td>Term &#x27;gridLevel&#x27; in the context.</td></tr>
+<tr id="meshCode"><td><code>bt:meshCode</code></td><td><code>https://w3id.org/basetwin/ns#meshCode</code></td><td>Term &#x27;meshCode&#x27; in the context.</td></tr>
+<tr id="model"><td><code>bt:model</code></td><td><code>https://w3id.org/basetwin/ns#model</code></td><td>Term &#x27;model&#x27; in the context.</td></tr>
+<tr id="params"><td><code>bt:params</code></td><td><code>https://w3id.org/basetwin/ns#params</code></td><td>Term &#x27;params&#x27; in the context.</td></tr>
+<tr id="startedAt"><td><code>bt:startedAt</code></td><td><code>https://w3id.org/basetwin/ns#startedAt</code></td><td>Term &#x27;startedAt&#x27; in the context.</td></tr>
+<tr id="status"><td><code>bt:status</code></td><td><code>https://w3id.org/basetwin/ns#status</code></td><td>Term &#x27;status&#x27; in the context.</td></tr>
+<tr id="used"><td><code>bt:used</code></td><td><code>https://w3id.org/basetwin/ns#used</code></td><td>Term &#x27;used&#x27; in the context.</td></tr>
+<tr id="workspace"><td><code>bt:workspace</code></td><td><code>https://w3id.org/basetwin/ns#workspace</code></td><td>Term &#x27;workspace&#x27; in the context.</td></tr>
+</tbody></table>
+<p>BaseTwin: open-source digital twin core on NGSI-LD (Apache-2.0).</p>
+</body></html>

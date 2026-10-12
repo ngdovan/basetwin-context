@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "bt": "https://w3id.org/basetwin/ns#",
+    "GridCell": "bt:GridCell",
+    "Area": "bt:Area",
+    "Workspace": "bt:Workspace",
+    "Dataset": "bt:Dataset",
+    "DatasetVersion": "bt:DatasetVersion",
+    "ModelRun": "bt:ModelRun",
+    "IngestRun": "bt:IngestRun",
+    "Scenario": "bt:Scenario",
+    "License": "bt:License",
+    "meshCode": "bt:meshCode",
+    "gridLevel": "bt:gridLevel",
+    "connector": "bt:connector",
+    "model": "bt:model",
+    "startedAt": "bt:startedAt",
+    "finishedAt": "bt:finishedAt",
+    "entitiesWritten": "bt:entitiesWritten",
+    "status": "bt:status",
+    "workspace": "bt:workspace",
+    "params": "bt:params",
+    "used": "bt:used"
+  }
+}
